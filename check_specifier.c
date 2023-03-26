@@ -12,10 +12,12 @@ int (*check_specifier(const char *format))(va_list)
 {
 	int i;
 
-	funct_t print_array[4] = {
+	funct_t print_array[6] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_pcent},
+		{"d", print_dec},
+		{"i", print_int},
 		{NULL, NULL}};
 
 	for (i = 0; print_array[i].t != NULL; i++)
