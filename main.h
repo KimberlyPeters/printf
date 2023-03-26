@@ -21,7 +21,7 @@ typedef struct funct
 } funct_t;
 
 
-
+int print_char(va_list);
 
 
 
