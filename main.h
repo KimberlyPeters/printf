@@ -1,10 +1,10 @@
-#include <stdarg.h>
 #ifndef _MAIN_H_
 #define _MAIN_H_
+#include <stdarg.h>
 
 int _printf(const char *format, ...);
 int _putchar(char c);
-int (*check_specifier(const char*))(va_list);
+int (*check_specifier(const char *))(va_list);
 
 /**
  * struct funct - struct for printer functions
