@@ -13,7 +13,6 @@ int print_dec(va_list args)
 	int count = 0;
 	int number;
 	int print_arr[10];
-	char x[1];
 
 	number = va_arg(args, int);
 	while (number != 0)
@@ -26,8 +25,8 @@ int print_dec(va_list args)
 	}
 	for (i; i >= 0; i--)
 	{
-		x[0] = ('0' + print_arr[i]);
-		count += write(1, x, 1);
+		_putchar('0' + print_arr[i]);
+		count++;
 	}
 	return (count);
 }
