@@ -21,11 +21,11 @@ typedef struct funct
 } funct_t;
 
 
-int print_char(va_list);
-int print_str(va_list);
-int print_cent(va_list);
-int print_int(va_list);
-int print_dec(va_list);
+int print_char(va_list args);
+int print_str(va_list args);
+int print_cent(va_list args);
+int print_int(va_list args);
+int print_dec(va_list args);
 
 
 
