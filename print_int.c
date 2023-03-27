@@ -27,7 +27,7 @@ int print_int(va_list args)
             i++;
     }
 
-    for (i; i >= 0; i--)
+    for (i = 0; i >= 0; i--)
     {
         _putchar('0' + print_arr[i]);
         count++;
