@@ -11,7 +11,7 @@ int print_pcent(va_list args)
 {
 	(void)args;
 
-	write(1, "%", 1);
+	_putchar('%');
 
 	return (1);
 }
