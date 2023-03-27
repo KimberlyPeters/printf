@@ -8,7 +8,7 @@
  */
 
 
-int (*check_specifier(const char *format))(va_list)
+int (*check_specifier(char *format))(va_list)
 {
 	int i;
 
@@ -22,7 +22,7 @@ int (*check_specifier(const char *format))(va_list)
 
 	for (i = 0; print_array[i].t != NULL; i++)
 	{
-		if (*(print_array[i].t) == *format)
+		if (*print_array[i].t == *format)
 		{
 			return (print_array[i].f);
 		}
