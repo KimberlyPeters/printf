@@ -18,13 +18,13 @@ int (*check_specifier(char*))(va_list);
 typedef struct funct
 {
 	char *t;
-	int (*f)(var_list);
+	int (*f)(va_list);
 } funct_t;
 
 
 int print_char(va_list args);
 int print_str(va_list args);
-int print_cent(va_list args);
+int print_pcent(va_list args);
 int print_int(va_list args);
 int print_dec(va_list args);
 
