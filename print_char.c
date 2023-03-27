@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdarg.h>
+
 /**
  * print_char - prints a character to stdout.
  * @args: variadic argument

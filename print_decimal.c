@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdarg.h>
+
 /**
  * print_dec - prints a given integer from variadic parameters to base 10
  * @args: variadic parameter
