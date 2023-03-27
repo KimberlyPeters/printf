@@ -9,12 +9,11 @@
 int print_char(va_list args)
 {
 	char c = (char)va_arg(args, int);
-	int count = 0;
 
 	if (c != '\0')
 	{
 		_putchar(c);
-		return (count);
+		return (1);
 	}
 
 	return (0);
