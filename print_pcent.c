@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdarg.h>
 /**
  * print_pcent - prints character % to stdout
  * @args: variadic parameter
