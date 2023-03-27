@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 /**
  * check_specifier - check that character is a valid specifier
  * and assigns an appropriate function for its printing
