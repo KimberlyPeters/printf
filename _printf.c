@@ -12,12 +12,13 @@
 
 int _printf(const char *format, ...)
 {
+	int (*f)(va_list);
 	int i = 0;
 	int count = 0;
 	va_list args;
 
 	va_start(args, format);
-	int (*f)(va_list);
+
 
 	if (format == NULL)
 		return (-1);
