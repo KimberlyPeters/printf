@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 #include <stdarg.h>
 
 /**
@@ -10,12 +11,13 @@
 int print_str(va_list args)
 {
     int count = 0;
+    int i;
     char *str = va_arg(args, char *);
 
     if (str == NULL)
         return (-1);
 
-    for (int i = 0; str[i] != '\0'; i++)
+    for (i = 0; str[i] != '\0'; i++)
     {
         _putchar(str[i]);
         count++;
