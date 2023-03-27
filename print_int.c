@@ -29,9 +29,9 @@ int print_int(va_list args)
 
 	for (i; i >= 0; i--)
 	{
-		x[0] = ('0' + print_arr[i]); 
+		x[0] = ('0' + print_arr[i]);
 		count += write(1, x, 1);
 	}
 
 	return (count);
-}	
+}
