@@ -18,17 +18,17 @@ int print_int(va_list args)
 	number = va_arg(args, int);
 
 	if (number == 0)
-        {
-                _putchar('0');
-                return (1);
-        }
+	{
+		_putchar('0');
+		return (1);
+	}
 
-        if (number < 0)
-        {
-                _putchar('-');
-                count++;
-                number = -number;
-        }
+	if (number < 0)
+	{
+		_putchar('-');
+		count++;
+		number = -number;
+	}
 	while (number != 0)
 	{
 		print_arr[i] = (number % 10);
