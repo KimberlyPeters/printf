@@ -27,7 +27,7 @@ int print_str(va_list args);
 int print_pcent(va_list args);
 int print_int(va_list args);
 int print_dec(va_list args);
-
+int print_binary(va_list args);
 
 
 #endif

@@ -13,12 +13,13 @@ int (*check_specifier(const char *format))(va_list)
 {
 	int i;
 
-	funct_t print_array[6] = {
+	funct_t print_array[7] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_pcent},
 		{"d", print_dec},
 		{"i", print_int},
+		{"b", print_binary},
 		{NULL, NULL}};
 
 	for (i = 0; print_array[i].t != NULL; i++)
