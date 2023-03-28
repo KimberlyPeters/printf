@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * check_specifier - selects the correct conversion
+ * get_specifier - selects the correct conversion
  * specifier to perform the operation.
  * @s: argument indentifier
  * @count: index for argument indentifier
  * Return: pointer to a function.
  */
-int (*check_specifier(const char *s, int count))(va_list, char *, unsigned int)
+int (*get_specifier(const char *s, int count))(va_list, char *, unsigned int)
 {
 	funct_t ft[] = {
 		{"c", print_chr}, {"s", print_str},
