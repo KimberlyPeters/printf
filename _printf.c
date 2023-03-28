@@ -27,7 +27,7 @@ int _printf(const char *format, ...)
 				return (-1);
 			}
 			else
-			{	f = check_specifier(format, i + 1);
+			{	f = get_specifier(format, i + 1);
 				if (f == NULL)
 				{
 					if (format[i + 1] == ' ' && !format[i + 2])
