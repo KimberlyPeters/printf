@@ -33,7 +33,7 @@ int (*specifier(const char *s, int count))(va_list, char *, unsigned int)
 		{"l", print_prg}, {"h", print_prg},
 		{" +i", prinpint}, {" +d", prinpint},
 		{"+ i", prinpint}, {"+ d", prinpint},
-		{" %", print_prg}, {NULL, NULL},
+		{" %", print_cent}, {NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
 

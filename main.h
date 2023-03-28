@@ -20,7 +20,7 @@ typedef struct print
 } funct_t;
 
 int _printf(const char *format, ...);
-int print_prg(va_list __attribute__((unused)), char *, unsigned int);
+int print_cent(va_list __attribute__((unused)), char *, unsigned int);
 int print_chr(va_list args, char *buf, unsigned int ibuf);
 int print_str(va_list args, char *buf, unsigned int ibuf);
 int print_int(va_list args, char *buf, unsigned int ibuf);
