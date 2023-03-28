@@ -5,7 +5,7 @@
  * @count: index for argument indentifier
  * Return: pointer to a function.
  */
-int (*specifier(const char *s, int count))(va_list, char *, unsigned int)
+int specifier(const char *s, int count)
 {
 	funct_t ft[] = {
 		{"c", print_chr}, {"s", print_str},
