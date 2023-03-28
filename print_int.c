@@ -38,7 +38,7 @@ int print_int(va_list args)
 		i++;
 	}
 
-	for (i = 0; i >= 0; i--)
+	for (i = i; i >= 0 && i < 10; i--)
 	{
 		_putchar('0' + print_arr[i]);
 		count++;
